@@ -4,7 +4,7 @@ import { outsideGrid } from './grid.js'
 import { getSnakeHead } from './snake.js';
 import { snakeIntersection } from './snake.js';
 import {displayScore} from './snake.js';
-
+import { getHighScore } from './snake.js';
 
 let lastRenderTime = 0
 let gameOver = false
@@ -13,7 +13,10 @@ const gameBoard = document.getElementById('game-board')
 function main(currentTime){
 
   if(gameOver){
-    if(confirm(' Game Over.\n Your score is: '+ Number(displayScore()) + '\n Press ok to restart.' ))
+
+    const finalScore = Number(displayScore());
+    const finalHighScore = Number(getHighScore())
+    if(confirm(`Game Over.\nYour score is: ${finalScore}\nHigh Score is: ${finalHighScore}\nPress OK to restart.` ))
       {
         window.location.reload()
       }
@@ -51,3 +54,4 @@ function checkDeath(){
    gameOver =  outsideGrid(getSnakeHead()) || snakeIntersection() 
 
  }
+
