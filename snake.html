@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SNAKE GAME</title>
+    <link rel="stylesheet" href="snake.css">
+</head>
+<body>
+    <div id="score-container">
+        <span id="score">Score: 0</span>
+        <span id="high-score">High Score: <span id="displayed-high-score">0</span></span>
+    </div>
+    
+    <div id="game-board"></div>
+    <div id="mobile-controls">
+        <div class="row">
+            <button id="up">&#8963;</button>
+        </div>
+        <div class="row">
+            <button id="left">&#706;</button>
+            <button id="down">&#8964;</button>
+            <button id="right">&#707;</button>
+        </div>
+    </div>
+    <script src="game.js" defer type="module"></script>
+    <script src="mobileControl.js" defer></script>
+</body>
+</html>
