@@ -27,3 +27,9 @@ Use the arrow keys on your keyboard to navigate the snake towards the food. Each
 
 Ready to relive the glory or discover the fun? [Play the Classic Snake Game here](https://shashwatpathak98.github.io/Snake-Game/).
 
+## Demo
+
+https://github.com/shashwatpathak98/Snake-Game/assets/111122076/070f4e6e-7162-4629-a159-fa6eee2e24eb
+
+
+
